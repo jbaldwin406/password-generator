@@ -1,0 +1,64 @@
+:root {
+  --dark-grey: #24232c;
+  --grey: #817d92;
+  --light-grey: #e6e5ea;
+  --background: #18171f;
+  --green: #a4ffaf;
+  --red: #f64a4a;
+  --orange: #fb7c58;
+  --yellow: #f8cd65;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('assets/fonts/JetBrainsMono-VariableFont_wght.ttf');
+  src: url('assets/fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype'),
+    url('assets/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  font-family: 'JetBrains Mono';
+}
+
+.copy-icon {
+  margin-right: 28px;
+  fill: var(--green);
+}
+
+.button:hover .arrow-icon {
+  fill: var(--green) !important;
+}
+
+.box {
+  width: 10px;
+  height: 28px;
+  border: 2px solid var(--light-grey);
+  /* background-color: var(--yellow); */
+}
+
+.too-weak {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+
+.weak {
+  background-color: var(--orange);
+  border-color: var(--orange);
+}
+
+.medium {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.strong {
+  background-color: var(--green);
+  border-color: var(--green);
+}
