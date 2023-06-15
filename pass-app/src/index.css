@@ -32,6 +32,10 @@ body {
   fill: var(--green);
 }
 
+.copy-icon:hover {
+  fill: var(--light-grey);
+}
+
 .button:hover .arrow-icon {
   fill: var(--green) !important;
 }
